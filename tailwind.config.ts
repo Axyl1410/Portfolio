@@ -13,6 +13,11 @@ export default {
         foreground: "var(--foreground)",
       },
     },
+    fontFamily: {
+      montreal: ["Montreal", "sans-serif"],
+      FoundersGrotesk: ["FoundersGrotesk", "sans-serif"],
+      NeueMontreal: ["NeueMontreal", "sans-serif"],
+    },
   },
   plugins: [],
 } satisfies Config;
