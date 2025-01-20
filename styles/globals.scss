@@ -19,3 +19,18 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@font-face {
+  src: url("../fonts/FoundersGrotesk.woff");
+  font-family: FoundersGrotesk;
+}
+
+@font-face {
+  src: url("../fonts/NeueMontreal.woff");
+  font-family: NeueMontreal;
+}
+
+@font-face {
+  src: url("../fonts/PPNeueMontreal.woff");
+  font-family: montreal;
+}
