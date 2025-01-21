@@ -1,4 +1,5 @@
 "use client";
+
 import gsap from "gsap";
 import Image from "next/image";
 import frame from "@/public/frame.png";
