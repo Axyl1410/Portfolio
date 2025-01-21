@@ -12,7 +12,7 @@ export default function MobileNav() {
   return (
     <>
       <div className="padding-x flex h-[8vh] w-full items-center justify-between md:hidden">
-        <Link href={"/"}>
+        <Link href={"/public"}>
           <h1 className={"font-FoundersGrotesk text-4xl font-bold"}>Axyl.</h1>
         </Link>
         <HiOutlineMenuAlt4
@@ -30,7 +30,7 @@ export default function MobileNav() {
             className="bg-secondry fixed bottom-0 right-0 top-0 z-50 flex min-h-screen w-full flex-col items-end justify-end"
           >
             <div className="padding-x flex h-[8vh] w-full items-center justify-between border-b border-[#f1f1f155]">
-              <Link href={"/"}>
+              <Link href={"/public"}>
                 <h1
                   className={
                     "font-FoundersGrotesk text-4xl font-bold text-background"

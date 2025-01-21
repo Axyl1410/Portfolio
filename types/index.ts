@@ -1,4 +1,4 @@
 export type TtextHoverProps = {
-  titile1: string;
-  titile2: string;
+  title1: string;
+  title2: string;
 };

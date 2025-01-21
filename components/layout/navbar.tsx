@@ -34,7 +34,7 @@ export default function Navbar() {
           }
         >
           <div className="w-[50%]">
-            <Link href={"/"}>
+            <Link href={"/public"}>
               <h1 className={"font-FoundersGrotesk text-4xl font-bold"}>
                 Axyl.
               </h1>
@@ -49,7 +49,7 @@ export default function Navbar() {
                 }`}
                 href={item.href}
               >
-                <TextHover titile1={item.title} titile2={item.title} />
+                <TextHover title1={item.title} title2={item.title} />
               </Link>
             ))}
           </div>

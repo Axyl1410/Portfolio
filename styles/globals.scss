@@ -59,4 +59,8 @@ body {
   .paragraph {
     @apply text-[16px] leading-[24px] sm:text-[18px] sm:leading-[26px] md:text-[18px] md:leading-[26px] lg:text-[18px] lg:leading-[26px];
   }
+
+  .heading {
+    @apply text-[64px] leading-[45px] sm:text-[74px] sm:leading-[50px] md:text-[100px] md:leading-[75px] lg:text-[130px] lg:leading-[98px] 2xl:text-[150px] 2xl:leading-[100px];
+  }
 }
