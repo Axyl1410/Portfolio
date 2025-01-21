@@ -11,7 +11,7 @@ export default function MobileNav() {
   const [toggle, setToggle] = useState(false);
   return (
     <>
-      <div className="padding-x flex h-[8vh] w-full items-center justify-between md:hidden">
+      <div className="padding-x flex h-[8vh] w-full items-center justify-between lg:hidden">
         <Link href={"/public"}>
           <h1 className={"font-FoundersGrotesk text-4xl font-bold"}>Axyl.</h1>
         </Link>
@@ -27,7 +27,7 @@ export default function MobileNav() {
             animate={{ y: 0 }}
             exit={{ y: "-100%" }}
             transition={{ duration: 1, ease: [0.3, 0.86, 0.36, 0.95] }}
-            className="bg-secondry fixed bottom-0 right-0 top-0 z-50 flex min-h-screen w-full flex-col items-end justify-end"
+            className="fixed bottom-0 right-0 top-0 z-50 flex min-h-screen w-full flex-col items-end justify-end bg-secondry"
           >
             <div className="padding-x flex h-[8vh] w-full items-center justify-between border-b border-[#f1f1f155]">
               <Link href={"/public"}>
@@ -50,7 +50,7 @@ export default function MobileNav() {
                   href={item.href}
                   key={item.id}
                   onClick={(toggle) => setToggle(!toggle)}
-                  className="font-FoundersGrotesk text-[80px] font-bold uppercase leading-[67px] tracking-[-.9] text-background"
+                  className="font-FoundersGrotesk text-[60px] font-bold uppercase leading-[67px] tracking-[-.9] text-background line-through md:text-[80px]"
                 >
                   {item.title}
                 </Link>

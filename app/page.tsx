@@ -6,6 +6,8 @@ import { AnimatePresence, motion } from "motion/react";
 import Loader from "@/components/animation/preload";
 import Navbar from "@/components/layout/navbar";
 import Home from "@/components/layout/home";
+import Footer from "@/components/layout/footer";
+import Cursor from "@/components/animation/cursor";
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -30,17 +32,23 @@ export default function App() {
 
   return (
     <>
-      <AnimatePresence mode="wait">{isLoading && <Loader />}</AnimatePresence>
-      {!isLoading && (
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5 }}
-        >
-          <Navbar />
-          <Home />
-        </motion.div>
-      )}
+      <AnimatePresence mode="wait">
+        {isLoading && <Loader />}
+        {!isLoading && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
+          >
+            <div className={"hidden lg:block"}>
+              <Cursor />
+            </div>
+            <Navbar />
+            <Home />
+            <Footer />
+          </motion.div>
+        )}
+      </AnimatePresence>
     </>
   );
 }

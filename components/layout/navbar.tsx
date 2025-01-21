@@ -7,6 +7,7 @@ import { navbarItems } from "@/constants";
 import { useMotionValueEvent, useScroll, motion } from "motion/react";
 import MobileNav from "./mobile-nav";
 import TextHover from "@/components/animation/text-hover";
+import { cn } from "@/lib/utils";
 
 export default function Navbar() {
   const [hidden, setHidden] = useState(false);
@@ -25,7 +26,7 @@ export default function Navbar() {
     <>
       <motion.nav
         variants={navVariants}
-        className="padding-x fixed left-0 top-0 z-50 hidden w-full backdrop-blur-[7px] md:block"
+        className="padding-x fixed left-0 top-0 z-50 hidden w-full backdrop-blur-[7px] lg:block"
         animate={hidden ? "hidden" : "visible"}
       >
         <div
@@ -44,9 +45,10 @@ export default function Navbar() {
             {navbarItems.map((item) => (
               <Link
                 key={item.id}
-                className={`paragraph text-secondry hover flex w-fit flex-col font-NeueMontreal font-medium capitalize ${
-                  item.id === 5 && "ml-auto"
-                }`}
+                className={cn(
+                  "paragraph hover flex w-fit flex-col font-NeueMontreal font-medium capitalize text-secondry",
+                  item.id === 5 && "ml-auto",
+                )}
                 href={item.href}
               >
                 <TextHover title1={item.title} title2={item.title} />

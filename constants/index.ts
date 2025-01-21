@@ -7,27 +7,27 @@ export const footernavbarItems = [
   {
     id: 2,
     title: "Services",
-    href: "services",
+    href: "/",
   },
   {
     id: 3,
     title: "Our work",
-    href: "presentation",
+    href: "/",
   },
   {
     id: 4,
     title: "About us",
-    href: "ochi-team",
+    href: "/",
   },
   {
     id: 5,
     title: "Insights",
-    href: "insights",
+    href: "/",
   },
   {
     id: 6,
     title: "Contact us",
-    href: "contact",
+    href: "/",
   },
 ];
 
@@ -35,26 +35,26 @@ export const navbarItems = [
   {
     id: 1,
     title: "Services",
-    href: "/services",
+    href: "/",
   },
   {
     id: 2,
     title: "Our work",
-    href: "/presentation",
+    href: "/",
   },
   {
     id: 3,
     title: "About us",
-    href: "/ochi-team",
+    href: "/",
   },
   {
     id: 4,
     title: "Insights",
-    href: "/insights",
+    href: "/",
   },
   {
     id: 5,
     title: "Contact us",
-    href: "/contact",
+    href: "/",
   },
 ];

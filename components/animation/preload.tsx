@@ -71,7 +71,7 @@ export default function Loader() {
 
   return (
     <div className="fixed left-0 top-0 z-50 flex h-full w-full flex-col">
-      <div className="finder-container absolute left-1/2 top-1/2 z-20 h-[500px] w-[80%] -translate-x-1/2 -translate-y-1/2">
+      <div className="finder-container absolute left-1/2 top-1/2 z-20 h-[320px] w-[80%] -translate-x-1/2 -translate-y-1/2 lg:h-[500px]">
         {[frame, frame, frame, frame, frame].map((frame, index) => (
           <Image
             key={index}

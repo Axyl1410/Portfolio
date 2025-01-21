@@ -2,9 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  cursor: none;
+}
+
 body {
   font-family: montreal, sans-serif;
   background-color: #e1e1e1;
+
+  &::-webkit-scrollbar {
+    width: 0;
+  }
 }
 
 @font-face {
