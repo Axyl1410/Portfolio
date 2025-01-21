@@ -9,9 +9,17 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        background: "#f1f1f1",
+        secondry: "#212121",
       },
+    },
+    fontFamily: {
+      montreal: ["Montreal", "sans-serif"],
+      FoundersGrotesk: ["FoundersGrotesk", "sans-serif"],
+      NeueMontreal: ["NeueMontreal", "sans-serif"],
+    },
+    container: {
+      center: true,
     },
   },
   plugins: [],
