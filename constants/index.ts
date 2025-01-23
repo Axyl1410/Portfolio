@@ -58,3 +58,6 @@ export const navbarItems = [
     href: "/",
   },
 ];
+
+export const paragraph =
+  "As a creative web developer, I blend technical expertise with innovative design to craft engaging digital experiences. With a passion for problem-solving, I strive to build user-friendly interfaces that not only look great but also function seamlessly.";
