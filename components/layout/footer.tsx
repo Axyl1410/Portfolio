@@ -1,12 +1,12 @@
 "use client";
 
-import { cn } from "@/lib/utils";
-import { motion, useScroll, useTransform } from "motion/react";
-import { useEffect, useRef, useState } from "react";
-import styles from "@/styles/footer.module.scss";
-import Image from "next/image";
-import RoundedButton from "@/components/animation/rounded-button";
 import Magnetic from "@/components/animation/magnetic";
+import RoundedButton from "@/components/animation/rounded-button";
+import { cn } from "@/lib/utils";
+import styles from "@/styles/footer.module.scss";
+import { motion, useScroll, useTransform } from "motion/react";
+import Image from "next/image";
+import { useEffect, useRef, useState } from "react";
 
 const Footer = () => {
   const container = useRef(null);
@@ -63,7 +63,7 @@ const Footer = () => {
                 backgroundColor={"#334BD3"}
                 className={styles.button}
               >
-                <p>Get in touch</p>
+                <p className={"!text-sm sm:text-base"}>Get in touch</p>
               </RoundedButton>
             </a>
           </motion.div>
@@ -82,18 +82,20 @@ const Footer = () => {
           </motion.svg>
         </div>
 
-        <div className={styles.info}>
+        <div
+          className={cn("flex-col !justify-between sm:!flex-row", styles.info)}
+        >
           <div>
             <div>
               <h3>Version</h3>
-              <p>2024 © Edition</p>
+              <p>2025 © Edition</p>
             </div>
             <div>
               <h3>Vietnam</h3>
               <p>{vietnamTime}</p>
             </div>
           </div>
-          <div className="flex w-full justify-between md:block md:w-auto">
+          <div className="flex justify-between md:block md:w-auto">
             <div>
               <h3>Socials</h3>
               <a

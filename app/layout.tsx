@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`antialiased`}>{children}</body>
+      <body className={`w-screen overflow-hidden antialiased`}>{children}</body>
     </html>
   );
 }

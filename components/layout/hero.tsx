@@ -13,7 +13,7 @@ export default function Hero() {
     >
       <div className="container flex h-full w-full flex-col justify-between">
         <div />
-        <div className="flex h-[85vh] w-full flex-col justify-between sm:h-[75vh]">
+        <div className="flex h-[85vh] w-full flex-col justify-between md:h-[75vh]">
           <div className="flex w-full justify-between gap-[20px]">
             <div>
               <h1 className="heading font-FoundersGrotesk font-semibold uppercase tracking-[-1.3px] text-[#212121]">
@@ -86,8 +86,7 @@ export default function Hero() {
                 }}
                 className="paragraph font-NeueMontreal text-secondry opacity-50"
               >
-                {/*scroll down*/}
-                In Progress
+                scroll down
               </motion.p>
             </div>
           </div>

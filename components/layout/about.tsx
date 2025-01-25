@@ -6,7 +6,7 @@ export default function About() {
   return (
     <section className="padding-x my-[50px] w-full lg:my-[100px]" id="about">
       <div className={"container"}>
-        <h1 className="overflow-hidden text-[40px] font-bold uppercase leading-none tracking-tight text-[#202020] md:text-[60px] xl:text-[80px]">
+        <h1 className="overflow-hidden text-[40px] font-bold uppercase leading-none tracking-tight text-[#202020] md:text-[50px] lg:text-[60px] xl:text-[80px]">
           {"about".split("").map((item: string, i: number) => (
             <motion.span
               initial={{ y: "100%" }}
@@ -24,7 +24,7 @@ export default function About() {
             </motion.span>
           ))}
         </h1>
-        <div className="w-full">
+        <div className="mt-4 w-full">
           <Word paragraph={paragraph} />
         </div>
       </div>

@@ -16,7 +16,7 @@ export default function Paragraph({ paragraph }: TParagraphProps) {
     <>
       <p
         ref={container}
-        className="flex max-w-[1200px] flex-wrap text-[#202020] md:text-[30px] md:leading-[35px] md:tracking-wider lg:ml-[200px]"
+        className="flex max-w-[1200px] flex-wrap text-[#202020] md:text-[20px] md:leading-[25px] md:tracking-wider lg:ml-[200px] lg:text-[30px] lg:leading-[35px]"
       >
         {words.map((word, i) => {
           const start = i / words.length;
@@ -35,7 +35,7 @@ export default function Paragraph({ paragraph }: TParagraphProps) {
 const Word = ({ children, progress, range }: TWordProps) => {
   const opacity = useTransform(progress, range, [0, 1]);
   return (
-    <span className="relative ml-1 mr-1 md:mr-3 md:mt-3">
+    <span className="relative ml-1 mr-1 md:mr-2 md:mt-2 lg:mr-3 lg:mt-3">
       <span className="absolute opacity-[20%]">{children}</span>
       <motion.span style={{ opacity: opacity }}>{children}</motion.span>
     </span>

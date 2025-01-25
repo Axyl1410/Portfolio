@@ -35,7 +35,7 @@ export default function Navbar() {
           }
         >
           <div className="w-[50%]">
-            <Link href={"/public"}>
+            <Link href={"/"}>
               <h1 className={"font-FoundersGrotesk text-4xl font-bold"}>
                 Axyl.
               </h1>
