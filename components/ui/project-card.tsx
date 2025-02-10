@@ -1,9 +1,9 @@
 "use client";
 
-import Link from "next/link";
-import Image from "next/image";
-import { Dispatch, SetStateAction } from "react";
 import { TProjectItem } from "@/types";
+import Image from "next/image";
+import Link from "next/link";
+import { Dispatch, SetStateAction } from "react";
 
 export default function ProjectCard({
   item,
@@ -37,7 +37,7 @@ export default function ProjectCard({
         <Image
           src={item.img}
           alt={`${item.title} Image`}
-          className="h-full w-full rounded-[10px] object-cover"
+          className="aspect-video h-full w-full rounded-[10px] object-cover"
         />
       </Link>
     </div>

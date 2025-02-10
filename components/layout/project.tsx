@@ -1,11 +1,11 @@
 "use client";
 
-import { project } from "@/constants";
-import { useRef, useState } from "react";
-import ProjectCard from "../ui/project-card";
-import { useScroll, motion, useTransform } from "motion/react";
-import Marquee from "../animation/marquee";
 import Modal from "@/components/animation/modal";
+import { project } from "@/constants";
+import { motion, useScroll, useTransform } from "motion/react";
+import { useRef, useState } from "react";
+import Marquee from "../animation/marquee";
+import ProjectCard from "../ui/project-card";
 
 export default function Project() {
   const container = useRef(null);
@@ -38,14 +38,19 @@ export default function Project() {
         </h1>
       </Marquee>
       <div
-        className="padding-x my-4 flex w-full flex-wrap justify-between gap-y-[50px]"
+        className="padding-x my-8 flex w-full flex-wrap justify-between gap-y-4 md:gap-y-[50px]"
         ref={container}
       >
         {project.map((project, index) => (
           <motion.div
             key={project.id}
             className="w-full sm:w-[49%]"
-            style={{ y: transformStyles[index % transformStyles.length] }}
+            style={{
+              y:
+                window.innerWidth >= 768
+                  ? transformStyles[index % transformStyles.length]
+                  : 0,
+            }}
           >
             <ProjectCard item={project} index={index} setModal={setModal} />
           </motion.div>
