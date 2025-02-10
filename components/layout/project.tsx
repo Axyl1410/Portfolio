@@ -38,7 +38,7 @@ export default function Project() {
         </h1>
       </Marquee>
       <div
-        className="padding-x my-8 flex w-full flex-wrap justify-between gap-y-4 md:gap-y-[50px]"
+        className="padding-x my-8 flex w-full flex-wrap justify-between gap-y-5 md:gap-y-[50px]"
         ref={container}
       >
         {project.map((project, index) => (

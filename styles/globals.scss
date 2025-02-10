@@ -59,6 +59,10 @@ body {
     @apply px-[20px] sm:px-[30px] md:px-[50px];
   }
 
+  .padding-y {
+    @apply sm:py-[100px] md:py-[80px] lg:py-[60px];
+  }
+
   .paragraph {
     @apply text-[16px] leading-[24px] sm:text-[18px] sm:leading-[26px] md:text-[18px] md:leading-[26px] lg:text-[18px] lg:leading-[26px];
   }
