@@ -32,23 +32,21 @@ export default function App() {
 
   return (
     <>
-      <AnimatePresence mode="wait">
-        {isLoading && <Loader />}
-        {!isLoading && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5 }}
-          >
-            <div className={"hidden lg:block"}>
-              <Cursor />
-            </div>
-            <Navbar />
-            <Home />
-            <Footer />
-          </motion.div>
-        )}
-      </AnimatePresence>
+      <AnimatePresence mode="wait">{isLoading && <Loader />}</AnimatePresence>
+      {!isLoading && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+        >
+          <div className={"hidden lg:block"}>
+            <Cursor />
+          </div>
+          <Navbar />
+          <Home />
+          <Footer />
+        </motion.div>
+      )}
     </>
   );
 }

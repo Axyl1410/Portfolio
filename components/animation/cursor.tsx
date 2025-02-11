@@ -21,6 +21,7 @@ export default function Cursor() {
     mouse.x.set(clientX - cursorSize / 2);
     mouse.y.set(clientY - cursorSize / 2);
   };
+
   useEffect(() => {
     window.addEventListener("mousemove", manageMouseMove);
     return () => {

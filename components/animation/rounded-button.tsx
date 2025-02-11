@@ -1,9 +1,9 @@
 "use client";
 
+import styles from "@/styles/rounded-button.module.scss";
 import gsap from "gsap";
 import React, { useEffect, useRef } from "react";
 import Magnetic from "./magnetic";
-import styles from "@/styles/rounded-button.module.scss";
 
 interface RoundedButtonProps {
   children: React.ReactNode;

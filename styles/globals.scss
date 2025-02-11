@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: montreal, sans-serif;
+  font-family: NeueMontreal, sans-serif;
   background-color: #e1e1e1;
 
   &::-webkit-scrollbar {
@@ -23,11 +23,6 @@ body {
 @font-face {
   src: url("../fonts/NeueMontreal.woff");
   font-family: NeueMontreal;
-}
-
-@font-face {
-  src: url("../fonts/PPNeueMontreal.woff");
-  font-family: montreal;
 }
 
 .hover {
@@ -62,6 +57,10 @@ body {
 @layer utilities {
   .padding-x {
     @apply px-[20px] sm:px-[30px] md:px-[50px];
+  }
+
+  .padding-y {
+    @apply sm:py-[100px] md:py-[80px] lg:py-[60px];
   }
 
   .paragraph {
